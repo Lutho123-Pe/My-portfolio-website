@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { Github, Linkedin, Mail, ExternalLink, Code, Brain, Database, Award, ChevronRight, Menu, X } from 'lucide-react'
+import { Github, Linkedin, Mail, ExternalLink, Code, Brain, Database, Award, ChevronRight, Menu, X, Briefcase } from 'lucide-react'
 import { motion } from 'framer-motion'
 import './App.css'
 
@@ -55,6 +55,22 @@ function App() {
     { name: 'Python for Data Science, AI & Development', issuer: 'IBM', date: 'Sep 2025' }
   ]
 
+  const experience = [
+    {
+      title: 'Software Testing & Cybersecurity Programme Participant',
+      company: 'Capaciti',
+      location: 'Gqeberha, South Africa',
+      period: 'Aug 2025 – Present',
+      responsibilities: [
+        'Engaged in an intensive, industry-aligned programme focusing primarily on Software Testing within the Gqeberha branch.',
+        'Developed practical skills in manual and automated testing, bug reporting, and test case design.',
+        'Applied Agile and Scrum principles in collaborative project environments.',
+        'Gained exposure to foundational cybersecurity concepts, emphasizing secure testing practices and data protection.',
+        'Strengthened analytical thinking, problem-solving, and documentation skills essential for software quality assurance.'
+      ]
+    }
+  ]
+
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId)
     setMobileMenuOpen(false)
@@ -66,7 +82,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'projects', 'skills', 'certifications', 'contact']
+      const sections = ['home', 'about', 'experience', 'projects', 'skills', 'certifications', 'contact']
       const current = sections.find(section => {
         const element = document.getElementById(section)
         if (element) {
@@ -97,7 +113,7 @@ function App() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6">
-            {['home', 'about', 'projects', 'skills', 'certifications', 'contact'].map((section) => (
+            {['home', 'about', 'experience', 'projects', 'skills', 'certifications', 'contact'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
@@ -128,7 +144,7 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800"
           >
-            {['home', 'about', 'projects', 'skills', 'certifications', 'contact'].map((section) => (
+            {['home', 'about', 'experience', 'projects', 'skills', 'certifications', 'contact'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
@@ -149,6 +165,13 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
+            <div className="flex justify-center mb-8">
+              <img 
+                src="/Profile.jpg" 
+                alt="Alulutho Tokwe" 
+                className="w-40 h-40 rounded-full object-cover border-4 border-blue-600 shadow-lg"
+              />
+            </div>
             <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
               AI/ML Engineer & Developer
             </h2>
@@ -211,8 +234,62 @@ function App() {
         </div>
       </section>
 
+      {/* Experience Section */}
+      <section id="experience" className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-4xl font-bold mb-8 text-center">Work Experience</h3>
+            <div className="space-y-6">
+              {experience.map((job, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <Card className="border-2 hover:border-blue-500 transition-colors">
+                    <CardHeader>
+                      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
+                        <div>
+                          <CardTitle className="text-xl flex items-center gap-2">
+                            <Briefcase size={20} className="text-blue-600" />
+                            {job.title}
+                          </CardTitle>
+                          <CardDescription className="text-base mt-1">
+                            <span className="font-medium">{job.company}</span> | {job.location}
+                          </CardDescription>
+                        </div>
+                        <Badge variant="outline" className="md:mt-0 w-fit">
+                          {job.period}
+                        </Badge>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2">
+                        {job.responsibilities.map((item, i) => (
+                          <li key={i} className="flex items-start gap-2">
+                            <span className="text-blue-600 mt-1">•</span>
+                            <span className="text-slate-700 dark:text-slate-300">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-4">
+      <section id="projects" className="py-20 px-4 bg-white/50 dark:bg-slate-900/50">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0 }}
@@ -296,7 +373,7 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 px-4 bg-white/50 dark:bg-slate-900/50">
+      <section id="skills" className="py-20 px-4">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0 }}
@@ -341,7 +418,7 @@ function App() {
       </section>
 
       {/* Certifications Section */}
-      <section id="certifications" className="py-20 px-4">
+      <section id="certifications" className="py-20 px-4 bg-white/50 dark:bg-slate-900/50">
         <div className="container mx-auto max-w-4xl">
           <motion.div
             initial={{ opacity: 0 }}
