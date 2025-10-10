@@ -13,6 +13,7 @@ function App() {
   const [activeCertificate, setActiveCertificate] = useState(null)
   const [showCertificateModal, setShowCertificateModal] = useState(false)
   const [selectedCertificate, setSelectedCertificate] = useState(null)
+  const [showResumePreview, setShowResumePreview] = useState(false)
 
   const projects = [
     {
@@ -56,55 +57,64 @@ function App() {
       name: 'Advanced Learning Algorithms', 
       issuer: 'DeepLearning.AI / Stanford University', 
       date: 'Sep 2025',
-      file: 'Advanced Learning algorithms.pdf'
+      file: 'Advanced Learning algorithms.pdf',
+      image: 'Advanced learning algorithms.PNG'
     },
     { 
       name: 'Generative AI with Large Language Models', 
       issuer: 'DeepLearning.AI / AWS', 
       date: 'Sep 2025',
-      file: 'Generative AI with Large Language Models.pdf'
+      file: 'Generative AI with Large Language Models.pdf',
+      image: 'Generative AI with Large Language Models.PNG'
     },
     { 
       name: 'Supervised Machine Learning', 
       issuer: 'DeepLearning.AI / Stanford University', 
       date: 'Sep 2025',
-      file: 'Supervised Machine Learning.pdf'
+      file: 'Supervised Machine Learning.pdf',
+      image: 'Superised Machine Learning Regression and Classification.PNG'
     },
     { 
       name: 'Trustworthy AI: Managing Bias, Ethics, and Accountability', 
       issuer: 'Johns Hopkins University', 
       date: 'Oct 2025',
-      file: 'Trustworthy AI Managing Bias, Ethics, and Accountability.pdf'
+      file: 'Trustworthy AI Managing Bias, Ethics, and Accountability.pdf',
+      image: 'Trustworthy Ai Managing Bias, Ethics, and Accountability.PNG'
     },
     { 
       name: 'AI Foundations: Prompt Engineering with ChatGPT', 
       issuer: 'Arizona State University', 
       date: 'Sep 2025',
-      file: 'Prompt Engineering with ChatGPT.pdf'
+      file: 'Prompt Engineering with ChatGPT.pdf',
+      image: 'AI Foundations  Prompt Engineering with Chatgpt.PNG'
     },
     { 
       name: 'Python for Data Science, AI & Development', 
       issuer: 'IBM', 
       date: 'Sep 2025',
-      file: 'Python for Data Science, AI & Development.pdf'
+      file: 'Python for Data Science, AI & Development.pdf',
+      image: 'Python for Data Science, AI & Development.PNG'
     },
     { 
       name: 'Introduction to Responsible AI', 
       issuer: 'Google Cloud', 
       date: 'Sep 2025',
-      file: 'Introduction to Responsible AI.pdf'
+      file: 'Introduction to Responsible AI.pdf',
+      image: 'Introduction to responsible AI.PNG'
     },
     { 
       name: 'Solving Problems with Creative and Critical Thinking', 
       issuer: 'IBM', 
       date: 'Oct 2025',
-      file: 'Solving Problems with Creative and Critical Thinking.pdf'
+      file: 'Solving Problems with Creative and Critical Thinking.pdf',
+      image: 'Solving Problems with Creative and Critical Thinking.PNG'
     },
     { 
       name: 'AI Essentials', 
       issuer: 'Intel', 
       date: 'Aug 2025',
-      file: 'AI Essentials.pdf'
+      file: 'AI Essentials.pdf',
+      image: 'AI Essentials.PNG'
     }
   ]
 
@@ -420,12 +430,42 @@ function App() {
                       </p>
                     </div>
                     <div className="mt-6 flex justify-center">
-                      <Button size="lg" className="bg-white text-black hover:bg-zinc-200 flex items-center gap-2" asChild>
-                        <a href="/Alulutho_Tokwe_CV.pdf" download>
-                          <Download size={18} />
-                          Download Resume
-                        </a>
-                      </Button>
+                      <div className="relative" onMouseEnter={() => setShowResumePreview(true)} onMouseLeave={() => setShowResumePreview(false)}>
+                        <Button size="lg" className="bg-white text-black hover:bg-zinc-200 flex items-center gap-2" asChild>
+                          <a href="/MyResume.pdf" download>
+                            <Download size={18} />
+                            Download Resume
+                          </a>
+                        </Button>
+                        
+                        {/* Resume Preview on Hover */}
+                        {showResumePreview && (
+                          <motion.div 
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="absolute z-10 left-1/2 bottom-full mb-2 transform -translate-x-1/2 bg-black border border-zinc-700 rounded-lg shadow-xl overflow-hidden"
+                            style={{ width: '300px', height: '400px' }}
+                          >
+                            <div className="relative w-full h-full">
+                              <iframe 
+                                src="/MyResume.pdf" 
+                                className="w-full h-full"
+                                title="Resume Preview"
+                              />
+                              <div className="absolute inset-0 flex items-center justify-center bg-black/50">
+                                <Button 
+                                  className="bg-white text-black hover:bg-zinc-200"
+                                  asChild
+                                >
+                                  <a href="/MyResume.pdf" target="_blank" rel="noopener noreferrer">
+                                    View Full Resume
+                                  </a>
+                                </Button>
+                              </div>
+                            </div>
+                          </motion.div>
+                        )}
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -711,7 +751,12 @@ function App() {
                       style={{ width: '300px', height: '200px' }}
                     >
                       <div className="relative w-full h-full">
-                        <div className="absolute inset-0 flex items-center justify-center bg-black/70">
+                        <img 
+                          src={`/certificate_images/${cert.image}`} 
+                          alt={cert.name}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/50">
                           <Button 
                             className="bg-white text-black hover:bg-zinc-200"
                             onClick={() => openCertificateModal(cert)}
@@ -719,11 +764,6 @@ function App() {
                             View Certificate
                           </Button>
                         </div>
-                        <img 
-                          src={`/certificates/${cert.file}`} 
-                          alt={cert.name}
-                          className="w-full h-full object-contain opacity-50"
-                        />
                       </div>
                     </motion.div>
                   )}
