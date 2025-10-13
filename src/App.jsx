@@ -58,63 +58,63 @@ function App() {
       issuer: 'DeepLearning.AI / Stanford University', 
       date: 'Sep 2025',
       file: 'Advanced Learning algorithms.pdf',
-      image: 'Advanced learning algorithms.PNG'
+      image: 'Advancedlearningalgorithms.PNG'
     },
     { 
       name: 'Generative AI with Large Language Models', 
       issuer: 'DeepLearning.AI / AWS', 
       date: 'Sep 2025',
       file: 'Generative AI with Large Language Models.pdf',
-      image: 'Generative AI with Large Language Models.PNG'
+      image: 'GenerativeAIwithLargeLanguageModels.PNG'
     },
     { 
       name: 'Supervised Machine Learning', 
       issuer: 'DeepLearning.AI / Stanford University', 
       date: 'Sep 2025',
       file: 'Supervised Machine Learning.pdf',
-      image: 'Superised Machine Learning Regression and Classification.PNG'
+      image: 'SuperisedMachineLearningRegressionandClassification.PNG'
     },
     { 
       name: 'Trustworthy AI: Managing Bias, Ethics, and Accountability', 
       issuer: 'Johns Hopkins University', 
       date: 'Oct 2025',
       file: 'Trustworthy AI Managing Bias, Ethics, and Accountability.pdf',
-      image: 'Trustworthy Ai Managing Bias, Ethics, and Accountability.PNG'
+      image: 'TrustworthyAiManagingBias,Ethics,andAccountability.PNG'
     },
     { 
       name: 'AI Foundations: Prompt Engineering with ChatGPT', 
       issuer: 'Arizona State University', 
       date: 'Sep 2025',
       file: 'Prompt Engineering with ChatGPT.pdf',
-      image: 'AI Foundations  Prompt Engineering with Chatgpt.PNG'
+      image: 'AIFoundationsPromptEngineeringwithChatgpt.PNG'
     },
     { 
       name: 'Python for Data Science, AI & Development', 
       issuer: 'IBM', 
       date: 'Sep 2025',
       file: 'Python for Data Science, AI & Development.pdf',
-      image: 'Python for Data Science, AI & Development.PNG'
+      image: 'PythonforDataScience,AI&Development.PNG'
     },
     { 
       name: 'Introduction to Responsible AI', 
       issuer: 'Google Cloud', 
       date: 'Sep 2025',
       file: 'Introduction to Responsible AI.pdf',
-      image: 'Introduction to responsible AI.PNG'
+      image: 'IntroductiontoresponsibleAI.PNG'
     },
     { 
       name: 'Solving Problems with Creative and Critical Thinking', 
       issuer: 'IBM', 
       date: 'Oct 2025',
       file: 'Solving Problems with Creative and Critical Thinking.pdf',
-      image: 'Solving Problems with Creative and Critical Thinking.PNG'
+      image: 'SolvingProblemswithCreativeandCriticalThinking.PNG'
     },
     { 
       name: 'AI Essentials', 
       issuer: 'Intel', 
       date: 'Aug 2025',
       file: 'AI Essentials.pdf',
-      image: 'AI Essentials.PNG'
+      image: 'AIEssentials.PNG'
     }
   ]
 
@@ -310,7 +310,7 @@ function App() {
               </motion.div>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Aspiring Software Tester & Cybersecurity Candidate<br />
+              AI/ML Engineer & Developer<br />
               <span className="text-zinc-400">CAPACITI Programme</span>
             </h2>
             <p className="text-xl md:text-2xl text-zinc-300 mb-8 max-w-3xl mx-auto">
@@ -754,7 +754,7 @@ function App() {
                         <img 
                           src={`/certificate_images/${cert.image}`} 
                           alt={cert.name}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                         <div className="absolute inset-0 flex items-center justify-center bg-black/50">
                           <Button 
@@ -865,11 +865,11 @@ function App() {
                 <X size={20} className="text-zinc-400 hover:text-white" />
               </Button>
             </div>
-            <div className="flex-1 overflow-hidden">
-              <iframe 
-                src={`/certificates/${selectedCertificate.file}`} 
-                className="w-full h-full"
-                title={selectedCertificate.name}
+            <div className="flex-1 overflow-hidden bg-white p-4">
+              <img 
+                src={`/certificate_images/${selectedCertificate.image}`} 
+                alt={selectedCertificate.name}
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="p-4 border-t border-zinc-800 flex justify-between items-center">
@@ -878,7 +878,7 @@ function App() {
                 className="bg-white text-black hover:bg-zinc-200"
                 asChild
               >
-                <a href={`/certificates/${selectedCertificate.file}`} target="_blank" rel="noopener noreferrer" download>
+                <a href={`/certificate_images/${selectedCertificate.image}`} target="_blank" rel="noopener noreferrer" download>
                   <Download size={16} className="mr-2" />
                   Download
                 </a>
