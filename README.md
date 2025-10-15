@@ -1,12 +1,12 @@
-# Alulutho Tokwe - Professional Portfolio Website
+<img width="1343" height="653" alt="image" src="https://github.com/user-attachments/assets/f86497fa-565b-4b61-a12d-4b983f4b6d2e" /># Alulutho Tokwe - Professional Portfolio Website
 
 A responsive, modern portfolio website showcasing my AI/ML projects, skills, and professional background.
 
 ## 🌟 Live Demo
 
-Visit the live website: [Alulutho Tokwe Portfolio](https://alulutho-tokwe.vercel.app/)
+Visit the live website: [Alulutho Tokwe Portfolio](https://alulutho-gjhluz.manus.space/)
 
-![Portfolio Screenshot](public/portfolio-screenshot.png)
+![Portfolio Screenshot](public/landing-page.png)
 
 ## 🚀 Features
 
