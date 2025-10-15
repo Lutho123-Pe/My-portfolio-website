@@ -342,7 +342,7 @@ function App() {
               </motion.a>
               <motion.a 
                 whileHover={{ scale: 1.1 }}
-                href="https://linkedin.com/in/lutho-alulutho-84a122295" 
+                href="https://www.linkedin.com/in/alulutho-tokwe-84a122295/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-zinc-400 hover:text-white transition-colors"
@@ -798,7 +798,7 @@ function App() {
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
                 <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10 flex items-center gap-2" asChild>
-                  <a href="https://linkedin.com/in/lutho-alulutho-84a122295" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/alulutho-tokwe-84a122295/" target="_blank" rel="noopener noreferrer">
                     <Linkedin size={20} />
                     Connect on LinkedIn
                   </a>
@@ -827,7 +827,7 @@ function App() {
             <motion.a 
               whileHover={{ scale: 1.2, rotate: -5 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              href="https://linkedin.com/in/lutho-alulutho-84a122295" 
+              href="https://www.linkedin.com/in/alulutho-tokwe-84a122295/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-white transition-colors"
