@@ -41,6 +41,14 @@ function App() {
       liveDemo: 'https://v0-study-mate-edu-bot.vercel.app/',
       achievements: ['Implemented RAG-based contextual Q&A system', 'Created interactive flashcards and quizzes', 'Built Pomodoro timer for productivity', 'Developed progress tracking with visualizations'],
       featured: true
+    },
+    {
+      title: 'OrangeHRM Test Automation',
+      description: 'Selenium WebDriver test automation for OrangeHRM demo platform, covering Week 3 requirements and verifying bugs from manual testing reports. This project demonstrates automated testing capabilities by validating both functionality and identified defects from previous manual testing phases.',
+      technologies: ['Python', 'Selenium WebDriver 4.15.0', 'pytest', 'pytest-html', 'Chrome WebDriver', 'Page Object Model (POM)'],
+      github: 'https://github.com/Lutho123-Pe/OrangeHRM',
+      achievements: ['Implemented 6 comprehensive test cases covering login functionality, security vulnerabilities, and form submission', 'Automated detection of 3 critical bugs: missing password reset link, username case insensitivity, and form submission issues', 'Achieved 67% test pass rate with 100% success for intended functionality', 'Generated detailed HTML test reports with pytest-html for comprehensive test documentation'],
+      featured: true
     }
   ]
 
@@ -586,13 +594,13 @@ function App() {
                     </div>
                     
                     <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
-                      I'm a forward-thinking ICT graduate with a passion for creating technology that's both intelligent and trustworthy. My journey combines rigorous academic training with hands-on experience in software testing and quality assurance through the prestigious Capaciti Programme in Gqeberha.
+                      I am Alulutho Tokwe, an Information Technology Management graduate from IIE Rosebank College and current Software Tester Candidate at CAPACITI. I'm passionate about using technology to solve real-world business challenges and create meaningful impact.
                     </p>
                     <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
-                      What sets me apart is my unique blend of AI/ML knowledge and emerging expertise in software testing and cybersecurity. I believe that truly exceptional software must be both innovative and reliable—a philosophy that guides my approach to every project I undertake.
+                      My skills include system analysis, SQL, web development, software testing, and project management. I am a proactive and detail-oriented individual with strong communication, teamwork, and problem-solving abilities. I am currently open to opportunities in IT Support, Help Desk, Service Desk, or ICT Technician roles, where I can apply my technical knowledge, grow professionally, and contribute to organizational success.
                     </p>
                     <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
-                      My technical foundation in AI and machine learning, complemented by practical experience in test case design and security protocols, positions me at the intersection of innovation and quality assurance—where the most valuable solutions are created.
+                      I believe in continuous learning and have completed over 35 certifications in AI, Python, and professional development, further strengthening my ability to adapt and innovate in the tech industry. My unique blend of AI/ML knowledge and emerging expertise in software testing and cybersecurity positions me at the intersection of innovation and quality assurance—where the most valuable solutions are created.
                     </p>
                     <div className="mt-6 p-4 bg-zinc-800/50 rounded-lg border-l-4 border-white">
                       <p className="text-lg italic text-zinc-300">
