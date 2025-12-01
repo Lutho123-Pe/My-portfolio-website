@@ -48,8 +48,10 @@ function App() {
     'Programming Languages': ['Python', 'SQL', 'JavaScript', 'HTML', 'CSS', 'TypeScript'],
     'AI/ML Tools': ['TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy', 'AI Fairness 360', 'Fairlearn', 'Groq API'],
     'Web Development': ['React', 'Next.js', 'Flask', 'Streamlit', 'Tailwind CSS', 'Radix UI'],
-    'Testing & Security': ['Manual Testing', 'Test Case Design', 'Bug Reporting', 'Secure Testing', 'Data Protection'],
-    'Tools & Platforms': ['Git/GitHub', 'Jupyter', 'Google Cloud', 'AWS', 'Vercel', 'MS Office']
+    'Testing & Security': ['Manual Testing', 'Test Case Design', 'Bug Reporting', 'Secure Testing', 'Data Protection', 'Automated Software Testing', 'Black-box Testing', 'White-box Testing', 'Selenium Testing', 'Software Testing Life Cycle (STLC)', 'Software Development Life Cycle (SDLC)'],
+    'Tools & Platforms': ['Git/GitHub', 'Jupyter', 'Google Cloud', 'AWS', 'Vercel', 'MS Office'],
+    'Professional Development': ['Communication Skills', 'Time Management', 'Problem Solving', 'Critical Thinking', 'Creative Problem Solving', 'Teamwork', 'Interpersonal Skills', 'Collaborative Problem Solving', 'Attention to Detail', 'Analytical Skills', 'Active Listening', 'Emotional Intelligence', 'Conflict Management', 'Negotiation Skills', 'Leadership', 'Personal Branding'],
+    'IT & Support': ['System Analysis', 'IT Customer Support', 'Help Desk Support', 'Network Fundamentals', 'Knowledge Management', 'Risk Management', 'Databases']
   }
 
   const certifications = [
@@ -115,6 +117,174 @@ function App() {
       date: 'Aug 2025',
       file: 'AI Essentials.pdf',
       image: 'AIEssentials.PNG'
+    },
+    { 
+      name: 'IT Customer Support Basics', 
+      issuer: 'Cisco', 
+      date: 'Nov 2025',
+      file: 'IT Customer Support Basics.pdf',
+      image: 'ITCustomerSupportBasics.PNG'
+    },
+    { 
+      name: 'Web and Mobile Testing with Selenium', 
+      issuer: 'University of Minnesota', 
+      date: 'Nov 2025',
+      file: 'Web and Mobile Testing with Selenium.pdf',
+      image: 'WebandMobileTestingwithSelenium.PNG'
+    },
+    { 
+      name: 'Black-box and White-box Testing', 
+      issuer: 'University of Minnesota', 
+      date: 'Oct 2025',
+      file: 'Black-box and White-box Testing.pdf',
+      image: 'BlackboxandWhiteboxTesting.PNG'
+    },
+    { 
+      name: 'Grit and Growth Mindset', 
+      issuer: 'Arizona State University', 
+      date: 'Oct 2025',
+      file: 'Grit and Growth Mindset.pdf',
+      image: 'GritandGrowthMindset.PNG'
+    },
+    { 
+      name: 'Introduction to Automated Analysis', 
+      issuer: 'University of Minnesota', 
+      date: 'Oct 2025',
+      file: 'Introduction to Automated Analysis.pdf',
+      image: 'IntroductiontoAutomatedAnalysis.PNG'
+    },
+    { 
+      name: 'Introduction to Software Testing', 
+      issuer: 'University of Minnesota', 
+      date: 'Oct 2025',
+      file: 'Introduction to Software Testing.pdf',
+      image: 'IntroductiontoSoftwareTesting.PNG'
+    },
+    { 
+      name: 'Negotiation skills: Negotiate and resolve conflict', 
+      issuer: 'Macquarie University', 
+      date: 'Oct 2025',
+      file: 'Negotiation skills.pdf',
+      image: 'NegotiationSkills.PNG'
+    },
+    { 
+      name: 'Active Listening: Enhancing Communication Skills', 
+      issuer: 'Coursera Instructor Network', 
+      date: 'Sep 2025',
+      file: 'Active Listening.pdf',
+      image: 'ActiveListening.PNG'
+    },
+    { 
+      name: 'Developing Interpersonal Skills', 
+      issuer: 'IBM', 
+      date: 'Sep 2025',
+      file: 'Developing Interpersonal Skills.pdf',
+      image: 'DevelopingInterpersonalSkills.PNG'
+    },
+    { 
+      name: 'Emotional Intelligence', 
+      issuer: 'Arizona State University', 
+      date: 'Sep 2025',
+      file: 'Emotional Intelligence.pdf',
+      image: 'EmotionalIntelligence.PNG'
+    },
+    { 
+      name: 'Financial Planning', 
+      issuer: 'Indian School of Business', 
+      date: 'Sep 2025',
+      file: 'Financial Planning.pdf',
+      image: 'FinancialPlanning.PNG'
+    },
+    { 
+      name: 'Finding Your Professional Voice: Confidence & Impact', 
+      issuer: 'University of London', 
+      date: 'Sep 2025',
+      file: 'Professional Voice.pdf',
+      image: 'ProfessionalVoice.PNG'
+    },
+    { 
+      name: 'Introduction to Personal Branding', 
+      issuer: 'University of Virginia', 
+      date: 'Sep 2025',
+      file: 'Personal Branding.pdf',
+      image: 'PersonalBranding.PNG'
+    },
+    { 
+      name: 'Leading with Impact: Team Dynamics, Strategy and Ethics', 
+      issuer: 'Coursera Instructor Network', 
+      date: 'Sep 2025',
+      file: 'Leading with Impact.pdf',
+      image: 'LeadingwithImpact.PNG'
+    },
+    { 
+      name: 'Managing Conflicts with Cultural and Emotional Intelligence', 
+      issuer: 'University of Maryland, College Park', 
+      date: 'Sep 2025',
+      file: 'Managing Conflicts.pdf',
+      image: 'ManagingConflicts.PNG'
+    },
+    { 
+      name: 'Positive Psychology: Resilience Skills', 
+      issuer: 'University of Pennsylvania', 
+      date: 'Sep 2025',
+      file: 'Resilience Skills.pdf',
+      image: 'ResilienceSkills.PNG'
+    },
+    { 
+      name: 'Preparation for Job Interviews', 
+      issuer: 'Coursera Project Network', 
+      date: 'Sep 2025',
+      file: 'Job Interviews.pdf',
+      image: 'JobInterviews.PNG'
+    },
+    { 
+      name: 'Psychology of the Self', 
+      issuer: 'American Psychological Association', 
+      date: 'Sep 2025',
+      file: 'Psychology of the Self.pdf',
+      image: 'PsychologyoftheSelf.PNG'
+    },
+    { 
+      name: 'Verbal Communications and Presentation Skills', 
+      issuer: 'Starweaver', 
+      date: 'Sep 2025',
+      file: 'Verbal Communications.pdf',
+      image: 'VerbalCommunications.PNG'
+    },
+    { 
+      name: 'Work Smarter, Not Harder: Time Management for Personal & Professional Productivity', 
+      issuer: 'University of California, Irvine', 
+      date: 'Sep 2025',
+      file: 'Time Management.pdf',
+      image: 'TimeManagement.PNG'
+    },
+    { 
+      name: 'Write Professional Emails in English', 
+      issuer: 'Georgia Institute of Technology', 
+      date: 'Sep 2025',
+      file: 'Professional Emails.pdf',
+      image: 'ProfessionalEmails.PNG'
+    },
+    { 
+      name: 'AI For Everyone', 
+      issuer: 'DeepLearning.AI', 
+      date: 'Aug 2025',
+      file: 'AI For Everyone.pdf',
+      image: 'AIForEveryone.PNG'
+    },
+    { 
+      name: 'Introduction to Generative AI', 
+      issuer: 'Google Cloud', 
+      date: 'Aug 2025',
+      file: 'Introduction to Generative AI.pdf',
+      image: 'IntroductiontoGenerativeAI.PNG'
+    },
+    { 
+      name: 'FNB App Academy', 
+      issuer: 'FNB', 
+      date: 'Jul 2025',
+      file: 'FNB App Academy.pdf',
+      image: 'FNBAppAcademy.PNG'
     }
   ]
 
