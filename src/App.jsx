@@ -59,7 +59,8 @@ function App() {
     'Testing & Security': ['Manual Testing', 'Test Case Design', 'Bug Reporting', 'Secure Testing', 'Data Protection', 'Automated Software Testing', 'Black-box Testing', 'White-box Testing', 'Selenium Testing', 'Software Testing Life Cycle (STLC)', 'Software Development Life Cycle (SDLC)'],
     'Tools & Platforms': ['Git/GitHub', 'Jupyter', 'Google Cloud', 'AWS', 'Vercel', 'MS Office'],
     'Professional Development': ['Communication Skills', 'Time Management', 'Problem Solving', 'Critical Thinking', 'Creative Problem Solving', 'Teamwork', 'Interpersonal Skills', 'Collaborative Problem Solving', 'Attention to Detail', 'Analytical Skills', 'Active Listening', 'Emotional Intelligence', 'Conflict Management', 'Negotiation Skills', 'Leadership', 'Personal Branding'],
-    'IT & Support': ['System Analysis', 'IT Customer Support', 'Help Desk Support', 'Network Fundamentals', 'Knowledge Management', 'Risk Management', 'Databases']
+    'IT & Support': ['System Analysis', 'IT Customer Support', 'Help Desk Support', 'Network Fundamentals', 'Knowledge Management', 'Risk Management', 'Databases'],
+    'Additional Skills': ['Attention to Detail', 'Artificial Intelligence (AI)', 'Customer Support', 'Technical Support']
   }
 
   const certifications = [
@@ -293,13 +294,48 @@ function App() {
       date: 'Jul 2025',
       file: 'FNB App Academy.pdf',
       image: 'FNBAppAcademy.PNG'
+    },
+    { 
+      name: 'Black-box and White-box Testing', 
+      issuer: 'University of Minnesota', 
+      date: 'Nov 2025',
+      file: 'Alulutho_Tokwe_ Black-box and White-box Testing.pdf',
+      image: 'BlackboxandWhiteboxTesting.PNG'
+    },
+    { 
+      name: 'Foundations of Software Testing and Validation', 
+      issuer: 'University of Minnesota', 
+      date: 'Nov 2025',
+      file: 'Alulutho_Tokwe_ Foundations of Software Testing and Validation.pdf',
+      image: 'FoundationsofSoftwareTestingandValidation.PNG'
+    },
+    { 
+      name: 'Introduction to Automated Analysis', 
+      issuer: 'University of Minnesota', 
+      date: 'Nov 2025',
+      file: 'Alulutho_Tokwe_Introduction to Automated  Analysis.pdf',
+      image: 'IntroductiontoAutomatedAnalysis.PNG'
+    },
+    { 
+      name: 'Introduction to Software Testing', 
+      issuer: 'University of Minnesota', 
+      date: 'Nov 2025',
+      file: 'Alulutho_Tokwe_Introduction to Software Testing.pdf',
+      image: 'IntroductiontoSoftwareTesting.PNG'
+    },
+    { 
+      name: 'Web and Mobile Testing with Selenium', 
+      issuer: 'University of Minnesota', 
+      date: 'Nov 2025',
+      file: 'Alulutho_Tokwe_Web and Mobile Testing with Selenium.pdf',
+      image: 'WebandMobileTestingwithSelenium.PNG'
     }
   ]
 
   const experience = [
     {
-      title: 'Software Testing & Cybersecurity Programme Participant',
-      company: 'Capaciti',
+      title: 'Software Tester Candidate',
+      company: 'CAPACITI',
       location: 'Gqeberha, South Africa',
       period: 'Aug 2025 – Present',
       responsibilities: [
@@ -594,13 +630,13 @@ function App() {
                     </div>
                     
                     <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
-                      I am Alulutho Tokwe, an Information Technology Management graduate from IIE Rosebank College and current Software Tester Candidate at CAPACITI. I'm passionate about using technology to solve real-world business challenges and create meaningful impact.
+                      I am a forward-thinking ICT graduate with a passion for creating technology that's both intelligent and trustworthy. My journey combines attentive academic training with hands-on experience in software testing and quality assurance through the respected Capaciti Programme in Gqeberha.
                     </p>
                     <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
-                      My skills include system analysis, SQL, web development, software testing, and project management. I am a proactive and detail-oriented individual with strong communication, teamwork, and problem-solving abilities. I am currently open to opportunities in IT Support, Help Desk, Service Desk, or ICT Technician roles, where I can apply my technical knowledge, grow professionally, and contribute to organizational success.
+                      What sets me apart is my unique blend of AI/ML knowledge and emerging expertise in software testing and cybersecurity. I believe that truly exceptional software must be both innovative and reliable—a philosophy that guides my approach to every project I undertake. My technical foundation in AI and machine learning, complemented by practical experience in test case design and security protocols, positions me at the intersection of innovation and quality assurance, where the most valuable solutions are created.
                     </p>
                     <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
-                      I believe in continuous learning and have completed over 35 certifications in AI, Python, and professional development, further strengthening my ability to adapt and innovate in the tech industry. My unique blend of AI/ML knowledge and emerging expertise in software testing and cybersecurity positions me at the intersection of innovation and quality assurance—where the most valuable solutions are created.
+                      I am a proactive and detail-oriented individual with strong communication, teamwork, and problem-solving abilities. I have completed over 40 certifications in AI, Python, software testing, and professional development, further strengthening my ability to adapt and innovate in the tech industry. I am currently open to opportunities in Software Testing, Quality Assurance, IT Support, or related ICT roles, where I can apply my technical knowledge, grow professionally, and contribute to organizational success.
                     </p>
                     <div className="mt-6 p-4 bg-zinc-800/50 rounded-lg border-l-4 border-white">
                       <p className="text-lg italic text-zinc-300">
