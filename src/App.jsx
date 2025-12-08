@@ -177,22 +177,16 @@ function App() {
       issuer: 'DeepLearning.AI', 
       date: 'Aug 2025',
       file: 'AI For Everyone.pdf',
-      image: 'AIForEveryone.PNG'
+      image: 'AIforEveryone.PNG'
     },
     { 
       name: 'Introduction to Generative AI', 
       issuer: 'Google Cloud', 
       date: 'Aug 2025',
       file: 'Introduction to Generative AI.pdf',
-      image: 'IntroductiontoGenerativeAI.PNG'
+      image: 'IntroductiontogenerativeAI.PNG'
     },
-    { 
-      name: 'FNB App Academy', 
-      issuer: 'FNB', 
-      date: 'Jul 2025',
-      file: 'FNB App Academy.pdf',
-      image: 'FNBAppAcademy.PNG'
-    },
+
     { 
       name: 'Black-box and White-box Testing', 
       issuer: 'University of Minnesota', 
