@@ -58,7 +58,7 @@ function App() {
     'Web Development': ['React', 'Next.js', 'Flask', 'Streamlit', 'Tailwind CSS', 'Radix UI'],
     'Testing & Security': ['Manual Testing', 'Test Case Design', 'Bug Reporting', 'Secure Testing', 'Data Protection', 'Automated Software Testing', 'Black-box Testing', 'White-box Testing', 'Selenium Testing', 'Software Testing Life Cycle (STLC)', 'Software Development Life Cycle (SDLC)'],
     'Tools & Platforms': ['Git/GitHub', 'Jupyter', 'Google Cloud', 'AWS', 'Vercel', 'MS Office'],
-    'Professional Development': ['Communication Skills', 'Time Management', 'Problem Solving', 'Critical Thinking', 'Creative Problem Solving', 'Teamwork', 'Interpersonal Skills', 'Collaborative Problem Solving', 'Attention to Detail', 'Analytical Skills', 'Active Listening', 'Emotional Intelligence', 'Conflict Management', 'Negotiation Skills', 'Leadership', 'Personal Branding'],
+
     'IT & Support': ['System Analysis', 'IT Customer Support', 'Help Desk Support', 'Network Fundamentals', 'Knowledge Management', 'Risk Management', 'Databases'],
     'Additional Skills': ['Attention to Detail', 'Artificial Intelligence (AI)', 'Customer Support', 'Technical Support']
   }
@@ -139,14 +139,14 @@ function App() {
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
       file: 'Web and Mobile Testing with Selenium.pdf',
-      image: 'WebandMobileTestingwithSelenium.PNG'
+      image: 'Web and Mobile Testing with Selenium.PNG'
     },
     { 
       name: 'Black-box and White-box Testing', 
       issuer: 'University of Minnesota', 
       date: 'Oct 2025',
       file: 'Black-box and White-box Testing.pdf',
-      image: 'BlackboxandWhiteboxTesting.PNG'
+      image: 'Black-box and White-box Testing.PNG'
     },
     { 
       name: 'Grit and Growth Mindset', 
@@ -160,14 +160,14 @@ function App() {
       issuer: 'University of Minnesota', 
       date: 'Oct 2025',
       file: 'Introduction to Automated Analysis.pdf',
-      image: 'IntroductiontoAutomatedAnalysis.PNG'
+      image: 'Introduction to Automated Analysis.PNG'
     },
     { 
       name: 'Introduction to Software Testing', 
       issuer: 'University of Minnesota', 
       date: 'Oct 2025',
       file: 'Introduction to Software Testing.pdf',
-      image: 'IntroductiontoSoftwareTesting.PNG'
+      image: 'Introduction to Software Testing.PNG'
     },
     { 
       name: 'Negotiation skills: Negotiate and resolve conflict', 
@@ -300,35 +300,35 @@ function App() {
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
       file: 'Alulutho_Tokwe_ Black-box and White-box Testing.pdf',
-      image: 'BlackboxandWhiteboxTesting.PNG'
+      image: 'Black-box and White-box Testing.PNG'
     },
     { 
       name: 'Foundations of Software Testing and Validation', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
       file: 'Alulutho_Tokwe_ Foundations of Software Testing and Validation.pdf',
-      image: 'FoundationsofSoftwareTestingandValidation.PNG'
+      image: 'Foundations of Sotware Testing and Validation.PNG'
     },
     { 
       name: 'Introduction to Automated Analysis', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
       file: 'Alulutho_Tokwe_Introduction to Automated  Analysis.pdf',
-      image: 'IntroductiontoAutomatedAnalysis.PNG'
+      image: 'Introduction to Automated Analysis.PNG'
     },
     { 
       name: 'Introduction to Software Testing', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
       file: 'Alulutho_Tokwe_Introduction to Software Testing.pdf',
-      image: 'IntroductiontoSoftwareTesting.PNG'
+      image: 'Introduction to Software Testing.PNG'
     },
     { 
       name: 'Web and Mobile Testing with Selenium', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
       file: 'Alulutho_Tokwe_Web and Mobile Testing with Selenium.pdf',
-      image: 'WebandMobileTestingwithSelenium.PNG'
+      image: 'Web and Mobile Testing with Selenium.PNG'
     }
   ]
 
@@ -524,8 +524,8 @@ function App() {
               </motion.div>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              AI/ML Engineer & Developer<br />
-              <span className="text-zinc-400">CAPACITI Programme</span>
+              ICT Graduate // Aspiring Software Tester<br />
+              <span className="text-zinc-400">No-code Developer // AI Developer</span>
             </h2>
             <p className="text-xl md:text-2xl text-zinc-300 mb-8 max-w-3xl mx-auto">
               Passionate about building reliable, secure software solutions through rigorous testing and cybersecurity best practices.
