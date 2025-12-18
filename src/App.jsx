@@ -98,7 +98,7 @@ function App() {
       issuer: 'Johns Hopkins University', 
       date: 'Oct 2025',
       file: 'certificates/Trustworthy AI Managing Bias, Ethics, and Accountability.pdf',
-      image: 'certificate_images/Trustworhty AI.PNG'
+      image: 'certificate_images/trustworthy-ai-managing-bias-ethics-and-accountability.png'
     },
     { 
       name: 'AI Foundations: Prompt Engineering with ChatGPT', 
@@ -112,7 +112,7 @@ function App() {
       issuer: 'IBM', 
       date: 'Sep 2025',
       file: 'certificates/Python for Data Science, AI & Development.pdf',
-      image: 'certificate_images/Python for Dat Science, AI & Development.PNG'
+      image: 'certificate_images/python-for-data-science-ai--development.png'    
     },
     { 
       name: 'Introduction to Responsible AI', 
@@ -157,7 +157,7 @@ function App() {
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
       file: 'certificates/Alulutho_Tokwe_ Foundations of Software Testing and Validation.pdf',
-      image: 'certificate_images/Foundations of Sotware Testing and Validation.PNG'
+      image: 'certificate_images/foundations-of-sotware-testing-and-validation.png'
     },
     { 
       name: 'Introduction to Automated Analysis', 
