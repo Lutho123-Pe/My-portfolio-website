@@ -540,7 +540,7 @@ function App() {
                         <Button size="lg" className="bg-white text-black hover:bg-zinc-200 flex items-center gap-2" asChild>
                           <a href="/MyResume.pdf" download>
                             <Download size={18} />
-                            Download Resume
+                            View Resume
                           </a>
                         </Button>
                         
@@ -554,7 +554,7 @@ function App() {
                           >
                             <div className="relative w-full h-full">
                               <iframe 
-                                src="/MyResume.pdf" 
+                                src="/MyResume.pdf#toolbar=0&navpanes=0" 
                                 className="w-full h-full"
                                 title="Resume Preview"
                               />
@@ -563,8 +563,8 @@ function App() {
                                   className="bg-white text-black hover:bg-zinc-200"
                                   asChild
                                 >
-                                  <a href="/MyResume.pdf" target="_blank" rel="noopener noreferrer">
-                                    View Full Resume
+                                  <a href="/MyResume.pdf" download>
+                                    Download Resume
                                   </a>
                                 </Button>
                               </div>
