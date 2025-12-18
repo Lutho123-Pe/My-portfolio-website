@@ -136,65 +136,15 @@ function App() {
       file: 'certificates/IT Customer Support Basics.pdf',
       image: 'certificate_images/IT Customer Support Basics.jfif'
     },
+
+
     { 
       name: 'Web and Mobile Testing with Selenium', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
-      file: 'certificates/Web and Mobile Testing with Selenium.pdf',
+      file: 'certificates/Alulutho_Tokwe_Web and Mobile Testing with Selenium.pdf',
       image: 'certificate_images/Web and Mobile Testing with Selenium.PNG'
     },
-    { 
-      name: 'Black-box and White-box Testing', 
-      issuer: 'University of Minnesota', 
-      date: 'Oct 2025',
-      file: 'certificates/Black-box and White-box Testing.pdf',
-      image: 'certificate_images/Black-box and White-box Testing.PNG'
-    },
-
-    { 
-      name: 'Introduction to Automated Analysis', 
-      issuer: 'University of Minnesota', 
-      date: 'Oct 2025',
-      file: 'certificates/Introduction to Automated Analysis.pdf',
-      image: 'certificate_images/Introduction to Automated Analysis.PNG'
-    },
-    { 
-      name: 'Introduction to Software Testing', 
-      issuer: 'University of Minnesota', 
-      date: 'Oct 2025',
-      file: 'certificates/Introduction to Software Testing.pdf',
-      image: 'certificate_images/Introduction to Software Testing.PNG'
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    { 
-      name: 'AI For Everyone', 
-      issuer: 'DeepLearning.AI', 
-      date: 'Aug 2025',
-      file: 'certificates/AI For Everyone.pdf',
-      image: 'certificate_images/AIForEveryone.PNG'
-    },
-    { 
-      name: 'Introduction to Generative AI', 
-      issuer: 'Google Cloud', 
-      date: 'Aug 2025',
-      file: 'certificates/Introduction to Generative AI.pdf',
-      image: 'certificate_images/Introduction to Generative AI.PNG'
-    },
-
     { 
       name: 'Black-box and White-box Testing', 
       issuer: 'University of Minnesota', 
@@ -222,13 +172,6 @@ function App() {
       date: 'Nov 2025',
       file: 'certificates/Alulutho_Tokwe_Introduction to Software Testing.pdf',
       image: 'certificate_images/Introduction to Software Testing.PNG'
-    },
-    { 
-      name: 'Web and Mobile Testing with Selenium', 
-      issuer: 'University of Minnesota', 
-      date: 'Nov 2025',
-      file: 'certificates/Alulutho_Tokwe_Web and Mobile Testing with Selenium.pdf',
-      image: 'certificate_images/Web and Mobile Testing with Selenium.PNG'
     }
   ]
 
