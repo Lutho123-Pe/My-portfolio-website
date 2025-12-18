@@ -134,7 +134,7 @@ function App() {
       issuer: 'Cisco', 
       date: 'Nov 2025',
       file: 'certificates/IT Customer Support Basics.pdf',
-      image: 'certificate_images/IT Customer Support Basics.PNG'
+      image: 'certificate_images/IT Customer Support Basics.jfif'
     },
     { 
       name: 'Web and Mobile Testing with Selenium', 
