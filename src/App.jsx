@@ -134,7 +134,7 @@ function App() {
       issuer: 'Cisco', 
       date: 'Nov 2025',
       file: 'certificates/IT Customer Support Basics.pdf',
-      image: 'certificate_images/it-customer-support-basics.jfif'
+      image: 'certificate_images/it-customer-support-basics.png'
     },
 
 
@@ -923,12 +923,11 @@ function App() {
               </Button>
             </div>
             <div className="flex-1 overflow-hidden bg-white p-4">
-              <iframe 
-                src={`/${selectedCertificate.file}`} 
-                title={selectedCertificate.name}
-                className="w-full h-full"
-                style={{ minHeight: '60vh' }}
-              ></iframe>
+              <img 
+                src={`/certificate_images/${selectedCertificate.image}`} 
+                alt={selectedCertificate.name}
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="p-4 border-t border-zinc-800 flex justify-between items-center">
               <p className="text-zinc-400">{selectedCertificate.issuer}</p>
