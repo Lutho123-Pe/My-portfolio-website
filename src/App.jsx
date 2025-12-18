@@ -68,94 +68,94 @@ function App() {
       name: 'Advanced Learning Algorithms', 
       issuer: 'DeepLearning.AI / Stanford University', 
       date: 'Sep 2025',
-      file: 'Advanced Learning algorithms.pdf',
-      image: 'Advancedlearningalgorithms.PNG'
+      file: 'certificates/Advanced Learning algorithms.pdf',
+      image: 'certificate_images/Advanced Learning algorithms.PNG'
     },
     { 
       name: 'Generative AI with Large Language Models', 
       issuer: 'DeepLearning.AI / AWS', 
       date: 'Sep 2025',
-      file: 'Generative AI with Large Language Models.pdf',
-      image: 'GenerativeAIwithLargeLanguageModels.PNG'
+      file: 'certificates/Generative AI with Large Language Models.pdf',
+      image: 'certificate_images/Generative AI with Large Language Models.PNG'
     },
     { 
       name: 'Supervised Machine Learning', 
       issuer: 'DeepLearning.AI / Stanford University', 
       date: 'Sep 2025',
-      file: 'Supervised Machine Learning.pdf',
-      image: 'SuperisedMachineLearningRegressionandClassification.PNG'
+      file: 'certificates/Supervised Machine Learning.pdf',
+      image: 'certificate_images/Superised Machine Learning Regression and Classification.PNG'
     },
     { 
       name: 'Trustworthy AI: Managing Bias, Ethics, and Accountability', 
       issuer: 'Johns Hopkins University', 
       date: 'Oct 2025',
-      file: 'Trustworthy AI Managing Bias, Ethics, and Accountability.pdf',
-      image: 'TrustworthyAiManagingBias,Ethics,andAccountability.PNG'
+      file: 'certificates/Trustworthy AI Managing Bias, Ethics, and Accountability.pdf',
+      image: 'certificate_images/Trustworthy AI Managing Bias, Ethics, and Accountability.PNG'
     },
     { 
       name: 'AI Foundations: Prompt Engineering with ChatGPT', 
       issuer: 'Arizona State University', 
       date: 'Sep 2025',
-      file: 'Prompt Engineering with ChatGPT.pdf',
-      image: 'AIFoundationsPromptEngineeringwithChatgpt.PNG'
+      file: 'certificates/Prompt Engineering with ChatGPT.pdf',
+      image: 'certificate_images/AI Foundations  Prompt Engineering with Chatgpt.PNG'
     },
     { 
       name: 'Python for Data Science, AI & Development', 
       issuer: 'IBM', 
       date: 'Sep 2025',
-      file: 'Python for Data Science, AI & Development.pdf',
-      image: 'PythonforDataScience,AI&Development.PNG'
+      file: 'certificates/Python for Data Science, AI & Development.pdf',
+      image: 'certificate_images/Python for Data Science, AI & Development.PNG'
     },
     { 
       name: 'Introduction to Responsible AI', 
       issuer: 'Google Cloud', 
       date: 'Sep 2025',
-      file: 'Introduction to Responsible AI.pdf',
-      image: 'IntroductiontoresponsibleAI.PNG'
+      file: 'certificates/Introduction to Responsible AI.pdf',
+      image: 'certificate_images/Introduction to Responsible AI.PNG'
     },
 
     { 
       name: 'AI Essentials', 
       issuer: 'Intel', 
       date: 'Aug 2025',
-      file: 'AI Essentials.pdf',
-      image: 'AIEssentials.PNG'
+      file: 'certificates/AI Essentials.pdf',
+      image: 'certificate_images/AI Essentials.PNG'
     },
     { 
       name: 'IT Customer Support Basics', 
       issuer: 'Cisco', 
       date: 'Nov 2025',
-      file: 'IT Customer Support Basics.pdf',
-      image: 'ITCustomerSupportBasics_new.PNG'
+      file: 'certificates/IT Customer Support Basics.pdf',
+      image: 'certificate_images/IT Customer Support Basics.PNG'
     },
     { 
       name: 'Web and Mobile Testing with Selenium', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
-      file: 'Web and Mobile Testing with Selenium.pdf',
-      image: 'Web and Mobile Testing with Selenium.PNG'
+      file: 'certificates/Web and Mobile Testing with Selenium.pdf',
+      image: 'certificate_images/Web and Mobile Testing with Selenium.PNG'
     },
     { 
       name: 'Black-box and White-box Testing', 
       issuer: 'University of Minnesota', 
       date: 'Oct 2025',
-      file: 'Black-box and White-box Testing.pdf',
-      image: 'Black-box and White-box Testing.PNG'
+      file: 'certificates/Black-box and White-box Testing.pdf',
+      image: 'certificate_images/Black-box and White-box Testing.PNG'
     },
 
     { 
       name: 'Introduction to Automated Analysis', 
       issuer: 'University of Minnesota', 
       date: 'Oct 2025',
-      file: 'Introduction to Automated Analysis.pdf',
-      image: 'Introduction to Automated Analysis.PNG'
+      file: 'certificates/Introduction to Automated Analysis.pdf',
+      image: 'certificate_images/Introduction to Automated Analysis.PNG'
     },
     { 
       name: 'Introduction to Software Testing', 
       issuer: 'University of Minnesota', 
       date: 'Oct 2025',
-      file: 'Introduction to Software Testing.pdf',
-      image: 'Introduction to Software Testing.PNG'
+      file: 'certificates/Introduction to Software Testing.pdf',
+      image: 'certificate_images/Introduction to Software Testing.PNG'
     },
 
 
@@ -176,51 +176,51 @@ function App() {
       name: 'AI For Everyone', 
       issuer: 'DeepLearning.AI', 
       date: 'Aug 2025',
-      file: 'AI For Everyone.pdf',
+      file: 'certificates/AI For Everyone.pdf',
       image: 'certificate_images/AIForEveryone.PNG'
     },
     { 
       name: 'Introduction to Generative AI', 
       issuer: 'Google Cloud', 
       date: 'Aug 2025',
-      file: 'Introduction to Generative AI.pdf',
-      image: 'IntroductiontogenerativeAI.PNG'
+      file: 'certificates/Introduction to Generative AI.pdf',
+      image: 'certificate_images/Introduction to Generative AI.PNG'
     },
 
     { 
       name: 'Black-box and White-box Testing', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
-      file: 'Alulutho_Tokwe_ Black-box and White-box Testing.pdf',
-      image: 'Black-box and White-box Testing.PNG'
+      file: 'certificates/Alulutho_Tokwe_ Black-box and White-box Testing.pdf',
+      image: 'certificate_images/Black-box and White-box Testing.PNG'
     },
     { 
       name: 'Foundations of Software Testing and Validation', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
-      file: 'Alulutho_Tokwe_ Foundations of Software Testing and Validation.pdf',
-      image: 'Foundations of Sotware Testing and Validation.PNG'
+      file: 'certificates/Alulutho_Tokwe_ Foundations of Software Testing and Validation.pdf',
+      image: 'certificate_images/Foundations of Software Testing and Validation.PNG'
     },
     { 
       name: 'Introduction to Automated Analysis', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
-      file: 'Alulutho_Tokwe_Introduction to Automated  Analysis.pdf',
-      image: 'Introduction to Automated Analysis.PNG'
+      file: 'certificates/Alulutho_Tokwe_Introduction to Automated  Analysis.pdf',
+      image: 'certificate_images/Introduction to Automated Analysis.PNG'
     },
     { 
       name: 'Introduction to Software Testing', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
-      file: 'Alulutho_Tokwe_Introduction to Software Testing.pdf',
-      image: 'Introduction to Software Testing.PNG'
+      file: 'certificates/Alulutho_Tokwe_Introduction to Software Testing.pdf',
+      image: 'certificate_images/Introduction to Software Testing.PNG'
     },
     { 
       name: 'Web and Mobile Testing with Selenium', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
-      file: 'Alulutho_Tokwe_Web and Mobile Testing with Selenium.pdf',
-      image: 'Web and Mobile Testing with Selenium.PNG'
+      file: 'certificates/Alulutho_Tokwe_Web and Mobile Testing with Selenium.pdf',
+      image: 'certificate_images/Web and Mobile Testing with Selenium.PNG'
     }
   ]
 
