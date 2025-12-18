@@ -49,6 +49,14 @@ function App() {
       github: 'https://github.com/Lutho123-Pe/OrangeHRM',
       achievements: ['Implemented 6 comprehensive test cases covering login functionality, security vulnerabilities, and form submission', 'Automated detection of 3 critical bugs: missing password reset link, username case insensitivity, and form submission issues', 'Achieved 67% test pass rate with 100% success for intended functionality', 'Generated detailed HTML test reports with pytest-html for comprehensive test documentation'],
       featured: true
+    },
+    {
+      title: 'Manual Testing - OrangeHRM Demo (Week 1 & 2)',
+      description: 'Comprehensive manual testing of the OrangeHRM demo platform for Week 1 and Week 2, including detailed test case design, execution, and bug reporting. This project demonstrates thorough quality assurance practices through systematic testing methodology and identification of critical defects in authentication, leave management, and UI functionality.',
+      technologies: ['Manual Testing', 'Test Case Design', 'Bug Reporting', 'STLC', 'OrangeHRM Platform'],
+      github: 'https://github.com/Lutho123-Pe/Manual-Testing-OrangeHRMDemo-Week-1-and-2',
+      achievements: ['Designed and executed comprehensive test cases covering authentication, leave management, and employee data modules', 'Identified 7 critical bugs including security vulnerabilities (user enumeration, case-insensitive login), functional defects (missing password reset), and UI inconsistencies', 'Created detailed bug reports with steps to reproduce, expected vs actual results, and severity/priority classifications', 'Documented test plans and test case execution results in structured formats for quality assurance'],
+      featured: true
     }
   ]
 
