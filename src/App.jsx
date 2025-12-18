@@ -177,7 +177,7 @@ function App() {
       issuer: 'DeepLearning.AI', 
       date: 'Aug 2025',
       file: 'AI For Everyone.pdf',
-      image: 'AIforEveryone.PNG'
+      image: 'AIForEveryone.PNG'
     },
     { 
       name: 'Introduction to Generative AI', 
