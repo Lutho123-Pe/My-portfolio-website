@@ -923,11 +923,12 @@ function App() {
               </Button>
             </div>
             <div className="flex-1 overflow-hidden bg-white p-4">
-              <img 
-                src={`/certificate_images/${selectedCertificate.image}`} 
-                alt={selectedCertificate.name}
-                className="w-full h-full object-contain"
-              />
+              <iframe 
+                src={`/${selectedCertificate.file}`} 
+                title={selectedCertificate.name}
+                className="w-full h-full"
+                style={{ minHeight: '60vh' }}
+              ></iframe>
             </div>
             <div className="p-4 border-t border-zinc-800 flex justify-between items-center">
               <p className="text-zinc-400">{selectedCertificate.issuer}</p>
@@ -935,7 +936,7 @@ function App() {
                 className="bg-white text-black hover:bg-zinc-200"
                 asChild
               >
-                <a href={`/certificate_images/${selectedCertificate.image}`} target="_blank" rel="noopener noreferrer" download>
+                <a href={`/${selectedCertificate.file}`} target="_blank" rel="noopener noreferrer" download>
                   <Download size={16} className="mr-2" />
                   Download
                 </a>
