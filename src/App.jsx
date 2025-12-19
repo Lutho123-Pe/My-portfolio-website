@@ -129,13 +129,7 @@ function App() {
       file: 'certificates/AI Essentials.pdf',
       image: 'AI Essentials.PNG'
     },
-    { 
-      name: 'IT Customer Support Basics', 
-      issuer: 'Cisco', 
-      date: 'Nov 2025',
-      file: 'certificates/IT Customer Support Basics.pdf',
-      image: 'IT Customer Support Basics.jfif'
-    },
+
 
 
     { 
