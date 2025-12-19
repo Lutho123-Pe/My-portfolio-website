@@ -17,23 +17,6 @@ function App() {
 
   const projects = [
     {
-      title: 'Bias Audit and Mitigation',
-      description: 'Comprehensive bias audit of ML models using AI Fairness 360 and Fairlearn. Implemented pre-processing (Reweighing) and post-processing (Reject Option Classification) techniques to mitigate gender bias in income prediction.',
-      technologies: ['Python', 'AI Fairness 360', 'Fairlearn', 'Scikit-learn', 'Pandas', 'Matplotlib'],
-      github: 'https://github.com/Lutho123-Pe/Bias-Report-Notebook',
-      achievements: ['Quantified bias using Statistical Parity Difference, Equal Opportunity Difference, and Average Odds Difference', 'Successfully reduced bias while maintaining model accuracy', 'Developed reproducible workflow for bias auditing'],
-      featured: true
-    },
-    {
-      title: 'AI Resume Builder',
-      description: 'AI-powered resume generator using NLP to analyze user inputs and automatically generate professional summaries and relevant keywords. Optimized for Applicant Tracking Systems (ATS).',
-      technologies: ['Python', 'OpenAI API', 'NLTK', 'Pandas', 'Streamlit', 'Next.js'],
-      github: 'https://github.com/Lutho123-Pe/Resume-Builder',
-      liveDemo: 'https://v0-new-chat-delta-ebon.vercel.app/',
-      achievements: ['Automated resume generation reducing preparation time by 70%', 'Integrated NLP for keyword optimization', 'Deployed full-stack application with modern UI'],
-      featured: true
-    },
-    {
       title: 'StudyMate-edu-bot',
       description: 'Intelligent study assistant with concept explanations, quiz generation, flashcards, and adaptive question recommendations. Features RAG architecture for contextual understanding and voice note transcription.',
       technologies: ['Next.js 15', 'React 19', 'TypeScript', 'Tailwind CSS', 'AI SDK', 'Groq API', 'PDF.js', 'Recharts', 'Radix UI'],
@@ -85,99 +68,11 @@ function App() {
       date: 'Dec 2024',
       file: 'certificates/Diploma_IT_Management.pdf',
       image: 'Diploma_IT_Management.PNG'
-    },
-    { 
-      name: 'Advanced Learning Algorithms', 
-      issuer: 'DeepLearning.AI / Stanford University', 
-      date: 'Sep 2025',
-      file: 'certificates/Advanced Learning algorithms.pdf',
-      image: 'Advanced Learning algorithms.PNG'
-    },
-    { 
-      name: 'Generative AI with Large Language Models', 
-      issuer: 'DeepLearning.AI / AWS', 
-      date: 'Sep 2025',
-      file: 'certificates/Generative AI with Large Language Models.pdf',
-      image: 'Generative AI with Large Language Models.PNG'
-    },
-    { 
-      name: 'Supervised Machine Learning', 
-      issuer: 'DeepLearning.AI / Stanford University', 
-      date: 'Sep 2025',
-      file: 'certificates/Supervised Machine Learning.pdf',
-      image: 'Supervised Machine Learning.PNG'
-    },
-    { 
-      name: 'Trustworthy AI: Managing Bias, Ethics, and Accountability', 
-      issuer: 'Johns Hopkins University', 
-      date: 'Oct 2025',
-      file: 'certificates/Trustworthy AI Managing Bias, Ethics, and Accountability.pdf',
-      image: 'Trustworhty AI.PNG'
-    },
-    { 
-      name: 'AI Foundations: Prompt Engineering with ChatGPT', 
-      issuer: 'Arizona State University', 
-      date: 'Sep 2025',
-      file: 'certificates/Prompt Engineering with ChatGPT.pdf',
-      image: 'AI Foundations Prompt Engineering with ChatGPT.PNG'
-    },
-    { 
-      name: 'Python for Data Science, AI & Development', 
-      issuer: 'IBM', 
-      date: 'Sep 2025',
-      file: 'certificates/Python for Data Science, AI & Development.pdf',
-      image: 'Python for Dat Science, AI & Development.PNG'
-    },
-    { 
-      name: 'Introduction to Responsible AI', 
-      issuer: 'Google Cloud', 
-      date: 'Sep 2025',
-      file: 'certificates/Introduction to Responsible AI.pdf',
-      image: 'Introduction to Responsible AI.PNG'
-    },
-
-    { 
-      name: 'AI Essentials', 
-      issuer: 'Intel', 
-      date: 'Aug 2025',
-      file: 'certificates/AI Essentials.pdf',
-      image: 'AI Essentials.PNG'
-    },
-
-
-
-    { 
-      name: 'Web and Mobile Testing with Selenium', 
-      issuer: 'University of Minnesota', 
-      date: 'Nov 2025',
-      file: 'certificates/Alulutho_Tokwe_Web and Mobile Testing with Selenium.pdf',
-      image: 'Web and Mobile Testing with Selenium.PNG'
-    },
-    { 
-      name: 'Black-box and White-box Testing', 
-      issuer: 'University of Minnesota', 
-      date: 'Nov 2025',
-      file: 'certificates/Alulutho_Tokwe_ Black-box and White-box Testing.pdf',
-      image: 'Black-box and White-box Testing.PNG'
-    },
-    { 
-      name: 'Foundations of Software Testing and Validation', 
-      issuer: 'University of Minnesota', 
-      date: 'Nov 2025',
-      file: 'certificates/Alulutho_Tokwe_ Foundations of Software Testing and Validation.pdf',
-      image: 'Foundations of Sotware Testing and Validation.PNG'
-    },
-    { 
-      name: 'Introduction to Automated Analysis', 
-      issuer: 'University of Minnesota', 
-      date: 'Nov 2025',
-      file: 'certificates/Alulutho_Tokwe_Introduction to Automated  Analysis.pdf',
-      image: 'Introduction to Automated Analysis.PNG'
-    },
-    { 
-      name: 'Introduction to Software Testing', 
-      issuer: 'University of Minnesota', 
-      date: 'Nov 2025',
+        { name: 'Introduction to Automated Analysis', issuer: '', date: '', image: 'Introduction to Automated Analysis.PNG' },
+        { name: 'Web and Mobile Testing with Selenium', issuer: '', date: '', image: 'Web and Mobile Testing with Selenium.PNG' },
+        { name: 'Introduction to Software Testing', issuer: '', date: '', image: 'Introduction to Software Testing.PNG' },
+        { name: 'Black-box and White-box Testing', issuer: '', date: '', image: 'Black-box and White-box Testing.PNG' }
+      ]
       file: 'certificates/Alulutho_Tokwe_Introduction to Software Testing.pdf',
       image: 'Introduction to Software Testing.PNG'
     }
@@ -481,13 +376,7 @@ function App() {
                     </div>
                     
                     <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
-                      I am a forward-thinking ICT graduate with a passion for creating technology that's both intelligent and trustworthy. My journey combines attentive academic training with hands-on experience in software testing and quality assurance through the respected Capaciti Programme in Gqeberha.
-                    </p>
-                    <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
-                      What sets me apart is my unique blend of AI/ML knowledge and emerging expertise in software testing and cybersecurity. I believe that truly exceptional software must be both innovative and reliable—a philosophy that guides my approach to every project I undertake. My technical foundation in AI and machine learning, complemented by practical experience in test case design and security protocols, positions me at the intersection of innovation and quality assurance, where the most valuable solutions are created.
-                    </p>
-                    <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
-                      I am a proactive and detail-oriented individual with strong communication, teamwork, and problem-solving abilities. I have completed over 40 certifications in AI, Python, software testing, and professional development, further strengthening my ability to adapt and innovate in the tech industry. I am currently open to opportunities in Software Testing, Quality Assurance, IT Support, or related ICT roles, where I can apply my technical knowledge, grow professionally, and contribute to organizational success.
+                      ICT graduate focused on software testing, QA, and trustworthy AI. I blend practical testing experience with AI/ML knowledge to build reliable, secure solutions and am seeking opportunities in Software Testing, QA, or IT support.
                     </p>
                     <div className="mt-6 p-4 bg-zinc-800/50 rounded-lg border-l-4 border-white">
                       <p className="text-lg italic text-zinc-300">
@@ -764,6 +653,9 @@ function App() {
             variants={fadeIn}
           >
             <h3 className="text-4xl font-bold mb-12 text-center text-white">Certifications & Training</h3>
+            <div className="text-center mb-6">
+              <a href="https://github.com/Lutho123-Pe/All-Certificates" target="_blank" rel="noopener noreferrer" className="text-white underline">Certificates Available on GitHub</a>
+            </div>
             <motion.div 
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
               variants={staggerContainer}
@@ -926,5 +818,8 @@ function App() {
     </div>
   )
 }
+            <div className="mt-6 text-center">
+              <a href="https://github.com/Lutho123-Pe" target="_blank" rel="noopener noreferrer" className="text-white underline">All projects showcased are available on my GitHub account</a>
+            </div>
 
 export default App
