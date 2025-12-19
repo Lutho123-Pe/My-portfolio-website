@@ -73,6 +73,13 @@ function App() {
 
   const certifications = [
     { 
+      name: 'Diploma in Information Technology Management', 
+      issuer: 'The Independent Institute of Education (IIE)', 
+      date: 'Dec 2024',
+      file: 'certificates/Diploma_IT_Management.pdf',
+      image: 'Diploma_IT_Management.PNG'
+    },
+    { 
       name: 'Advanced Learning Algorithms', 
       issuer: 'DeepLearning.AI / Stanford University', 
       date: 'Sep 2025',
