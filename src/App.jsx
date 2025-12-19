@@ -55,27 +55,10 @@ function App() {
   }
 
   const certifications = [
-    { 
-      name: 'Microsoft Certified: DevOps Engineer Expert', 
-      issuer: 'Ikamva Digital', 
-      date: 'Nov 2025',
-      file: 'certificates/Microsoft_DevOps_Expert.pdf',
-      image: 'Microsoft_DevOps_Expert.PNG'
-    },
-    { 
-      name: 'Diploma in Information Technology Management', 
-      issuer: 'The Independent Institute of Education (IIE)', 
-      date: 'Dec 2024',
-      file: 'certificates/Diploma_IT_Management.pdf',
-      image: 'Diploma_IT_Management.PNG'
-        { name: 'Introduction to Automated Analysis', issuer: '', date: '', image: 'Introduction to Automated Analysis.PNG' },
-        { name: 'Web and Mobile Testing with Selenium', issuer: '', date: '', image: 'Web and Mobile Testing with Selenium.PNG' },
-        { name: 'Introduction to Software Testing', issuer: '', date: '', image: 'Introduction to Software Testing.PNG' },
-        { name: 'Black-box and White-box Testing', issuer: '', date: '', image: 'Black-box and White-box Testing.PNG' }
-      ]
-      file: 'certificates/Alulutho_Tokwe_Introduction to Software Testing.pdf',
-      image: 'Introduction to Software Testing.PNG'
-    }
+    { name: 'Introduction to Automated Analysis', issuer: '', date: '', image: 'Introduction to Automated Analysis.PNG' },
+    { name: 'Web and Mobile Testing with Selenium', issuer: '', date: '', image: 'Web and Mobile Testing with Selenium.PNG' },
+    { name: 'Introduction to Software Testing', issuer: '', date: '', image: 'Introduction to Software Testing.PNG' },
+    { name: 'Black-box and White-box Testing', issuer: '', date: '', image: 'Black-box and White-box Testing.PNG' }
   ]
 
   const experience = [
@@ -818,8 +801,5 @@ function App() {
     </div>
   )
 }
-            <div className="mt-6 text-center">
-              <a href="https://github.com/Lutho123-Pe" target="_blank" rel="noopener noreferrer" className="text-white underline">All projects showcased are available on my GitHub account</a>
-            </div>
 
 export default App
