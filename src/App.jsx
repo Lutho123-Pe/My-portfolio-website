@@ -10,7 +10,7 @@ function App() {
   const [activeSection, setActiveSection] = useState('home')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [imageLoaded, setImageLoaded] = useState(false)
-  const [activeCertificate, setActiveCertificate] = useState(null)
+
   const [showCertificateModal, setShowCertificateModal] = useState(false)
   const [selectedCertificate, setSelectedCertificate] = useState(null)
   const [showResumePreview, setShowResumePreview] = useState(false)
@@ -757,7 +757,7 @@ function App() {
           >
             <h3 className="text-4xl font-bold mb-12 text-center text-white">Certifications & Training</h3>
             <motion.div 
-              className="space-y-4"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
               variants={staggerContainer}
               initial="hidden"
               whileInView="visible"
@@ -768,62 +768,33 @@ function App() {
                   key={index}
                   variants={fadeInUp}
                   viewport={{ once: true }}
-                  className="relative"
-                  onMouseEnter={() => setActiveCertificate(index)}
-                  onMouseLeave={() => setActiveCertificate(null)}
+                  className="relative group cursor-pointer"
+                  onClick={() => openCertificateModal(cert)}
                 >
                   <Card 
-                    className="border-l-4 border-l-white border border-zinc-800 bg-black text-white hover:shadow-lg transition-shadow"
-                    style={{ borderColor: highlightColor }}
+                    className="p-2 border border-zinc-800 bg-black text-white hover:shadow-xl transition-all duration-300 group-hover:scale-[1.02] group-hover:border-white/50 h-full flex flex-col"
                   >
-                    <CardContent className="pt-6">
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                        <div className="flex-1">
-                          <h4 className="font-semibold text-lg mb-1 text-white">{cert.name}</h4>
-                          <p className="text-zinc-400">{cert.issuer}</p>
-                        </div>
-                        <div className="flex items-center gap-2 mt-2 md:mt-0">
-                          <Badge variant="secondary" className="w-fit bg-zinc-800 text-zinc-300">
-                            {cert.date}
-                          </Badge>
-                          <Button 
-                            variant="ghost" 
-                            size="icon" 
-                            className="h-8 w-8 rounded-full hover:bg-zinc-800"
-                            onClick={() => openCertificateModal(cert)}
-                          >
-                            <Eye size={16} className="text-zinc-400 hover:text-white" />
-                          </Button>
-                        </div>
+                    <div className="relative w-full aspect-[4/3] overflow-hidden rounded-md">
+                      <img 
+                        src={`/certificate_images/${cert.image}`} 
+                        alt={cert.name}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <Button 
+                          className="bg-white text-black hover:bg-zinc-200"
+                        >
+                          <Eye size={16} className="mr-2" />
+                          View Certificate
+                        </Button>
                       </div>
+                    </div>
+                    <CardContent className="pt-4 flex-grow">
+                      <h4 className="font-semibold text-lg mb-1 text-white">{cert.name}</h4>
+                      <p className="text-zinc-400 text-sm">{cert.issuer} - {cert.date}</p>
                     </CardContent>
                   </Card>
-                  
-                  {/* Certificate Preview on Hover */}
-                  {activeCertificate === index && (
-                    <motion.div 
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className="absolute z-10 right-0 top-full mt-2 bg-black border border-zinc-700 rounded-lg shadow-xl overflow-hidden"
-                      style={{ width: '300px', height: '200px' }}
-                    >
-                      <div className="relative w-full h-full">
-                        <img 
-                          src={`/certificate_images/${cert.image}`} 
-                          alt={cert.name}
-                          className="w-full h-full object-contain"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center bg-black/50">
-                          <Button 
-                            className="bg-white text-black hover:bg-zinc-200"
-                            onClick={() => openCertificateModal(cert)}
-                          >
-                            View Certificate
-                          </Button>
-                        </div>
-                      </div>
-                    </motion.div>
-                  )}
                 </motion.div>
               ))}
             </motion.div>
