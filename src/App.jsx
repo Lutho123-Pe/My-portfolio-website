@@ -72,7 +72,20 @@ function App() {
   }
 
   const certifications = [
-
+    { 
+      name: 'Microsoft Certified: DevOps Engineer Expert', 
+      issuer: 'Ikamva Digital', 
+      date: 'Nov 2025',
+      file: 'certificates/Microsoft_DevOps_Expert.pdf',
+      image: 'Microsoft_DevOps_Expert.PNG'
+    },
+    { 
+      name: 'Diploma in Information Technology Management', 
+      issuer: 'The Independent Institute of Education (IIE)', 
+      date: 'Dec 2024',
+      file: 'certificates/Diploma_IT_Management.pdf',
+      image: 'Diploma_IT_Management.PNG'
+    },
     { 
       name: 'Advanced Learning Algorithms', 
       issuer: 'DeepLearning.AI / Stanford University', 
@@ -162,20 +175,6 @@ function App() {
       image: 'Introduction to Automated Analysis.PNG'
     },
     { 
-      name: 'Microsoft Certified: DevOps Engineer Expert', 
-      issuer: 'Ikamva Digital', 
-      date: 'Nov 2025',
-      file: 'certificates/Microsoft_DevOps_Expert.pdf',
-      image: 'Microsoft_DevOps_Expert.PNG'
-    },
-    { 
-      name: 'Diploma in Information Technology Management', 
-      issuer: 'The Independent Institute of Education (IIE)', 
-      date: 'Dec 2024',
-      file: 'certificates/Diploma_IT_Management.pdf',
-      image: 'Diploma_IT_Management.PNG'
-    }
-  ]  { 
       name: 'Introduction to Software Testing', 
       issuer: 'University of Minnesota', 
       date: 'Nov 2025',
