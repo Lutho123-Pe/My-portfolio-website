@@ -17,15 +17,6 @@ function App() {
 
   const projects = [
     {
-      title: 'StudyMate-edu-bot',
-      description: 'Intelligent study assistant with concept explanations, quiz generation, flashcards, and adaptive question recommendations. Features RAG architecture for contextual understanding and voice note transcription.',
-      technologies: ['Next.js 15', 'React 19', 'TypeScript', 'Tailwind CSS', 'AI SDK', 'Groq API', 'PDF.js', 'Recharts', 'Radix UI'],
-      github: 'https://github.com/Lutho123-Pe/study-mate-edu-bot-fv',
-      liveDemo: 'https://v0-study-mate-edu-bot.vercel.app/',
-      achievements: ['Implemented RAG-based contextual Q&A system', 'Created interactive flashcards and quizzes', 'Built Pomodoro timer for productivity', 'Developed progress tracking with visualizations'],
-      featured: true
-    },
-    {
       title: 'OrangeHRM Test Automation',
       description: 'Selenium WebDriver test automation for OrangeHRM demo platform, covering Week 3 requirements and verifying bugs from manual testing reports. This project demonstrates automated testing capabilities by validating both functionality and identified defects from previous manual testing phases.',
       technologies: ['Python', 'Selenium WebDriver 4.15.0', 'pytest', 'pytest-html', 'Chrome WebDriver', 'Page Object Model (POM)'],
@@ -34,11 +25,20 @@ function App() {
       featured: true
     },
     {
-      title: 'Manual Testing - OrangeHRM Demo (Week 1 & 2)',
+      title: 'Manual Testing – OrangeHRM Demo (Week 1 & 2)',
       description: 'Comprehensive manual testing of the OrangeHRM demo platform for Week 1 and Week 2, including detailed test case design, execution, and bug reporting. This project demonstrates thorough quality assurance practices through systematic testing methodology and identification of critical defects in authentication, leave management, and UI functionality.',
       technologies: ['Manual Testing', 'Test Case Design', 'Bug Reporting', 'STLC', 'OrangeHRM Platform'],
       github: 'https://github.com/Lutho123-Pe/Manual-Testing-OrangeHRMDemo-Week-1-and-2',
       achievements: ['Designed and executed comprehensive test cases covering authentication, leave management, and employee data modules', 'Identified 7 critical bugs including security vulnerabilities (user enumeration, case-insensitive login), functional defects (missing password reset), and UI inconsistencies', 'Created detailed bug reports with steps to reproduce, expected vs actual results, and severity/priority classifications', 'Documented test plans and test case execution results in structured formats for quality assurance'],
+      featured: true
+    },
+    {
+      title: 'StudyMate-edu-bot',
+      description: 'Intelligent study assistant with concept explanations, quiz generation, flashcards, and adaptive question recommendations. Features RAG architecture for contextual understanding and voice note transcription.',
+      technologies: ['Next.js 15', 'React 19', 'TypeScript', 'Tailwind CSS', 'AI SDK', 'Groq API', 'PDF.js', 'Recharts', 'Radix UI'],
+      github: 'https://github.com/Lutho123-Pe/study-mate-edu-bot-fv',
+      liveDemo: 'https://v0-study-mate-edu-bot.vercel.app/',
+      achievements: ['Implemented RAG-based contextual Q&A system', 'Created interactive flashcards and quizzes', 'Built Pomodoro timer for productivity', 'Developed progress tracking with visualizations'],
       featured: true
     }
   ]
@@ -55,10 +55,12 @@ function App() {
   }
 
   const certifications = [
-    { name: 'Introduction to Automated Analysis', issuer: '', date: '', image: 'Introduction to Automated Analysis.PNG' },
-    { name: 'Web and Mobile Testing with Selenium', issuer: '', date: '', image: 'Web and Mobile Testing with Selenium.PNG' },
-    { name: 'Introduction to Software Testing', issuer: '', date: '', image: 'Introduction to Software Testing.PNG' },
-    { name: 'Black-box and White-box Testing', issuer: '', date: '', image: 'Black-box and White-box Testing.PNG' }
+    { name: 'Introduction to Software Testing', issuer: 'Coursera', date: '', image: 'Introduction to Software Testing.PNG' },
+    { name: 'Black-box and White-box Testing', issuer: 'Coursera', date: '', image: 'Black-box and White-box Testing.PNG' },
+    { name: 'Introduction to Automated Analysis', issuer: 'Coursera', date: '', image: 'Introduction to Automated Analysis.PNG' },
+    { name: 'Web and Mobile Testing with Selenium', issuer: 'Coursera', date: '', image: 'Web and Mobile Testing with Selenium.PNG' },
+    { name: 'AI for Everyone', issuer: 'DeepLearning.AI', date: '', image: 'AI for Everyone.PNG' },
+    { name: 'Introduction to Responsible AI', issuer: 'Google Cloud', date: '', image: 'Introduction to Responsible AI.PNG' }
   ]
 
   const experience = [
@@ -217,7 +219,7 @@ function App() {
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
-                className="block w-full text-left px-4 py-3 capitalize hover:bg-zinc-900 text-zinc-300"
+                className="block w-full text-left px-4 py-3 capitalize text-zinc-400 hover:text-white hover:bg-zinc-900 transition-colors"
               >
                 {section}
               </button>
@@ -359,11 +361,14 @@ function App() {
                     </div>
                     
                     <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
-                      ICT graduate focused on software testing, QA, and trustworthy AI. I blend practical testing experience with AI/ML knowledge to build reliable, secure solutions and am seeking opportunities in Software Testing, QA, or IT support.
+                      I am a forward-thinking ICT graduate with hands-on experience in software testing and quality assurance through the Capaciti Programme in Gqeberha. I bring a strong foundation in AI and machine learning, combined with practical skills in test case design and security awareness, enabling me to contribute to reliable and innovative software solutions.
+                    </p>
+                    <p className="text-lg text-zinc-300 mb-4 leading-relaxed">
+                      I am detail-oriented, collaborative, and adaptable, with strong communication and problem-solving skills. I hold multiple certifications in AI, Python, and software testing and am open to opportunities in Software Testing, Quality Assurance, IT Support, or related ICT roles where I can grow professionally and add value.
                     </p>
                     <div className="mt-6 p-4 bg-zinc-800/50 rounded-lg border-l-4 border-white">
                       <p className="text-lg italic text-zinc-300">
-                        "As a tech-driven problem solver, I aim to combine data, AI, and strategic thinking to deliver solutions that improve business performance and user experience."
+                        "A tech-driven problem solver combining data, AI, and strategic thinking to deliver reliable, user-focused solutions."
                       </p>
                     </div>
                     <div className="mt-6 flex justify-center">
@@ -564,6 +569,11 @@ function App() {
                 </motion.div>
               ))}
             </motion.div>
+            <div className="text-center mt-12">
+              <a href="https://github.com/Lutho123-Pe" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-zinc-300 transition-colors">
+                To see more projects, visit my GitHub account.
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -636,9 +646,6 @@ function App() {
             variants={fadeIn}
           >
             <h3 className="text-4xl font-bold mb-12 text-center text-white">Certifications & Training</h3>
-            <div className="text-center mb-6">
-              <a href="https://github.com/Lutho123-Pe/All-Certificates" target="_blank" rel="noopener noreferrer" className="text-white underline">Certificates Available on GitHub</a>
-            </div>
             <motion.div 
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
               variants={staggerContainer}
@@ -675,12 +682,17 @@ function App() {
                     </div>
                     <CardContent className="pt-4 flex-grow">
                       <h4 className="font-semibold text-lg mb-1 text-white">{cert.name}</h4>
-                      <p className="text-zinc-400 text-sm">{cert.issuer} - {cert.date}</p>
+                      <p className="text-zinc-400 text-sm">{cert.issuer} {cert.date && `- ${cert.date}`}</p>
                     </CardContent>
                   </Card>
                 </motion.div>
               ))}
             </motion.div>
+            <div className="text-center mt-12">
+              <a href="https://github.com/Lutho123-Pe/All-Certificates" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-zinc-300 transition-colors">
+                To see more certifications, visit my GitHub account.
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -745,55 +757,51 @@ function App() {
             >
               <Linkedin size={20} />
             </motion.a>
-            <motion.a 
-              whileHover={{ scale: 1.2, rotate: 5 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              href="mailto:tokwealulutho@gmail.com" 
-              className="hover:text-white transition-colors"
-            >
-              <Mail size={20} />
-            </motion.a>
           </div>
         </div>
       </footer>
 
       {/* Certificate Modal */}
       {showCertificateModal && selectedCertificate && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm" onClick={closeCertificateModal}>
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="bg-zinc-900 rounded-lg overflow-hidden w-full max-w-4xl max-h-[90vh] flex flex-col"
+            className="relative max-w-4xl w-full bg-zinc-900 rounded-xl overflow-hidden shadow-2xl border border-zinc-800"
+            onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between p-4 border-b border-zinc-800">
-              <h3 className="text-xl font-semibold text-white">{selectedCertificate.name}</h3>
-              <Button 
-                variant="ghost" 
-                size="icon" 
-                className="rounded-full hover:bg-zinc-800"
-                onClick={closeCertificateModal}
-              >
-                <X size={20} className="text-zinc-400 hover:text-white" />
-              </Button>
-            </div>
-            <div className="flex-1 overflow-hidden bg-white p-4">
-              <img 
-                src={`/certificate_images/${selectedCertificate.image}`} 
-                alt={selectedCertificate.name}
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <div className="p-4 border-t border-zinc-800 flex justify-between items-center">
-              <p className="text-zinc-400">{selectedCertificate.issuer}</p>
-              <Button 
-                className="bg-white text-black hover:bg-zinc-200"
-                asChild
-              >
-                <a href={`/${selectedCertificate.file}`} target="_blank" rel="noopener noreferrer" download>
-                  <Download size={16} className="mr-2" />
-                  Download
-                </a>
-              </Button>
+            <button 
+              className="absolute top-4 right-4 z-10 p-2 bg-black/50 hover:bg-black text-white rounded-full transition-colors"
+              onClick={closeCertificateModal}
+            >
+              <X size={24} />
+            </button>
+            
+            <div className="flex flex-col md:flex-row">
+              <div className="md:w-2/3 bg-black flex items-center justify-center p-4">
+                <img 
+                  src={`/certificate_images/${selectedCertificate.image}`} 
+                  alt={selectedCertificate.name}
+                  className="max-w-full max-h-[70vh] object-contain"
+                />
+              </div>
+              <div className="md:w-1/3 p-8 flex flex-col justify-center">
+                <Badge className="w-fit mb-4 bg-white text-black">Certification</Badge>
+                <h2 className="text-2xl font-bold text-white mb-2">{selectedCertificate.name}</h2>
+                <p className="text-zinc-400 mb-6">{selectedCertificate.issuer} {selectedCertificate.date && `• ${selectedCertificate.date}`}</p>
+                
+                <div className="space-y-4">
+                  <Button className="w-full bg-white text-black hover:bg-zinc-200" asChild>
+                    <a href={`/certificate_images/${selectedCertificate.image}`} download>
+                      <Download size={18} className="mr-2" />
+                      Download Certificate
+                    </a>
+                  </Button>
+                  <Button variant="outline" className="w-full border-zinc-700 text-zinc-300 hover:bg-zinc-800" onClick={closeCertificateModal}>
+                    Close Preview
+                  </Button>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
