@@ -255,8 +255,8 @@ function App() {
               </motion.div>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              ICT Graduate // Aspiring Software Tester<br />
-              <span className="text-zinc-400">No-code Developer // AI Developer</span>
+              Aspiring Software Tester<br />
+              <span className="text-zinc-400">AI Developer</span>
             </h2>
             <p className="text-xl md:text-2xl text-zinc-300 mb-8 max-w-3xl mx-auto">
               Passionate about building reliable, secure software solutions through rigorous testing and cybersecurity best practices.
